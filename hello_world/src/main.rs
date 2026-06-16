@@ -73,4 +73,10 @@ fn main() {
         if count == 10 { break count + 10; }
     };
     println!("Loop: {}", result);
+
+    let text = String::from("Hello world");
+    // Slice: referência para partes de coleções (sem owner)
+    let hello = &text[0..5];
+    let world = &text[6..11];
+    println!("{} - {}", hello, world);
 }

@@ -6,7 +6,9 @@
 // São acessados com paths: crate::modulo::item
 // São trazidos ao escopo com `use`
 // visibilidade: privado (padrão), pub(super), pub(crate), pub
+mod math;
 
 fn main() {
-    println!("Hello, world!");
+    println!("Sum: {}", math::sum(100, 50));
+    println!("Area: {}", math::area(10.0));
 }
